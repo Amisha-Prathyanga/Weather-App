@@ -2,7 +2,7 @@ import AddCity from "../components/addCity";
 import useFetch from "../components/useFetch";
 import WeatherList from "../components/WeatherList";
 
-const Home = () => {
+const Home = () => { 
   const {
     data: details,
     isPending,
