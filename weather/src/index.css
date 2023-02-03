@@ -12,10 +12,174 @@ code {
     monospace;
 }
 
-.detail-preview a{
+/* .detail-preview a{
   text-decoration: none;
 }
 
 .weather-card a{
   text-decoration: none;
-}
+  
+} */
+
+/* .card {
+ 
+  display: grid;
+   
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+   
+  grid-auto-rows: auto;
+   
+  grid-gap: 200px;
+   
+  } */
+
+  /* .card {
+ 
+    position: relative;
+    top: 90px;
+    min-height: 100%;
+
+    display: flex;
+     
+    flex-wrap: wrap;
+
+    flex-direction: row;
+     
+    }
+   
+
+   
+  .card {
+   
+  border: 2px solid #f4f0f0;
+   
+  border-radius: 4px;
+   
+  padding: .5em;
+   
+  } */
+
+  .card {
+    border: 0;
+  }
+  
+  .card-img-top {
+    border: none;
+  }
+
+  .cards {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .weather-card {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  .card-spacing {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  
+  
+
+  .mb-3{
+    position: relative;
+    top: 100px;
+    left: 530px;
+    max-width: 500px;
+  }
+
+  .input-box {
+    background-color: #333333 !important;
+    border-color: #333333 !important;
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 0.75rem 1rem;
+    font-size: 0.6rem;
+    background-color: #333333;
+    color: white !important;
+    border: none;
+  }
+
+
+
+  /* .card-body-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+    
+  } */
+  
+
+  .card-body div {
+    flex-basis: calc(33.33% - 0.5rem);
+    border-right: 1px solid #ddd;
+    padding: 0.5rem 1rem;
+  }
+  
+  .card-body div:last-child {
+    border-right: none;
+  }
+
+  .card-body span {
+    display: inline-block;
+    width: calc(100% / 3);
+    text-align: center;
+    padding: 1rem 0;
+    border-right: 1px solid white;
+  }
+  .card-body span:last-child {
+    border-right: 0;
+  }
+
+  .card-body p {
+    text-align: left;
+    white-space: nowrap;
+ }
+  
+
+  .mb-3 ::placeholder{
+    color: #f4f0f0 !important;
+  }
+
+  .btn-addCity{
+    background-color:  #9a50e5 !important;
+    color: #f4f0f0 !important;
+  }
+  .header{
+    position:relative;
+    right: 650px;
+    
+  }
+
+  .header h1{
+    position: relative;
+    top: 30px;
+    float:right;
+    color: #f4f0f0;
+    font-size: 25px;
+    text-align: center;
+    padding-left: 10px;
+    
+  }
+
+  .logo {
+    position: relative;
+    top: 25px;
+    float: right;
+    width: 45px;
+  }
+
+

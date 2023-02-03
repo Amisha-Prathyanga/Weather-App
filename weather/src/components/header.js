@@ -1,6 +1,11 @@
+import Logo from "../img/Logo.png"
 const Header = () => {
     return ( 
-       <h1>Weather App</h1> 
+      <div className="header">
+        <h1>Weather App</h1>
+        <img className="logo" src={Logo} />
+
+      </div>
      );
 }
  
