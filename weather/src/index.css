@@ -114,16 +114,16 @@ code {
 
 
 
-  /* .card-body-text {
+   .card-body-text {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     
     
-  } */
+  } 
   
 
-  .card-body div {
+   .card-body div {
     flex-basis: calc(33.33% - 0.5rem);
     border-right: 1px solid #ddd;
     padding: 0.5rem 1rem;
@@ -147,7 +147,7 @@ code {
   .card-body p {
     text-align: left;
     white-space: nowrap;
- }
+ } 
   
 
   .mb-3 ::placeholder{
@@ -181,5 +181,7 @@ code {
     float: right;
     width: 45px;
   }
+
+  
 
 

@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 import cloudBack from "../img/Logo.png";
 import dashBack from "../img/DashBack.jpg";
 import cloud1 from "../img/cloud1.png";
+import "../css/WeatherList.css";
 const WeatherList = ({ details }) => {
   return (
     // <Container className="cards">
@@ -105,6 +106,7 @@ const WeatherList = ({ details }) => {
               <Card.Body className="card-body">
                 <div className="card-body-text">
                   <Card.Text>Pressure : {detail.main.pressure}</Card.Text>
+                  <Card.Text>Humudity : {detail.main.humidity}</Card.Text>
                 </div>
                 <div className="card-body-text">
                   <Card.Text>Humudity : {detail.main.humidity}</Card.Text>
