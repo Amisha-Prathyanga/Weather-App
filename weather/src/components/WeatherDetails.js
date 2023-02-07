@@ -18,28 +18,51 @@ const WeatherDetails = () => {
       process.env.REACT_APP_API_TOKEN
   );
   return (
-    <Container  clasName="WDetail-card">
-    <div >
+    <div>
       {isPending && <div>Loading....</div>}
       {error && <div>{error}</div>}
       {detail && (
         <div>
           {detail.list.map((detail) => (
-            <div  key={detail.id}>
-              <div className="d-flex justify-content-center">
-                <div style={{ width: "40rem" }}>
-                  <Card  clasName="WDetail-card" >
-                    <Card.Img variant="top" src={lightBlue} />
-                    <Card.ImgOverlay>
-                      <Card.Title>{detail.name}</Card.Title>
-                    </Card.ImgOverlay>
-                    <Card.Body>
-                      <Card.Text>
-                        <h3>{detail.name}</h3>
-                        <h4>{detail.coord.lat}</h4>
-                      </Card.Text>
-                    </Card.Body>
-                  </Card>
+            <div key={detail.id}>
+              <div>
+                <div>
+                  <div className="one-card">
+                    <Card>
+                      <div className="overlay-img">
+                        <Card.Img src={lightBlue} style={{ width: '900px', height: '250px',}} />
+                      </div>
+                      <div className="card-overlay">
+                        <Card.ImgOverlay>
+                          <Card.Title>{detail.name}, {detail.sys.country}</Card.Title>
+                          <p>Time : {new Date(detail.dt).toLocaleTimeString()}</p>
+                          <p>{detail.main.temp}°C</p>
+                          {<p>{detail.weather[0].description}</p>}
+                          <p>Temp Min: {detail.main.temp_min}°C</p>
+                          <p>Temp Max: {detail.main.temp_max}°C</p>
+                        </Card.ImgOverlay>
+                      </div>
+                      <div className="c-body">
+                        <Card.Body>
+                          <Card.Text>
+                            <div className="text-left">
+
+                           <p>Pressure : {detail.main.pressure}</p>
+                           <p>Humudity : {detail.main.humidity}</p>
+                           <p>Visibility : {detail.visibility}</p>
+                            </div>
+                            <div className="text-right">
+                              <p>Sunrise: 6.05 a.m</p>
+                              <p>Sunset: 6.05 a.m</p>
+                            </div>
+                            <div className="text-middle">
+                              <p>{detail.wind.speed}m/s {detail.wind.deg} Degree</p>
+                            </div>
+                          </Card.Text>
+                        </Card.Body>
+                      </div>
+                    </Card>
+                  </div>
                 </div>
               </div>
             </div>
@@ -47,8 +70,6 @@ const WeatherDetails = () => {
         </div>
       )}
     </div>
-
-    </Container>
   );
 };
 
