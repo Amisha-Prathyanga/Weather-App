@@ -36,10 +36,18 @@ const WeatherDetails = () => {
                         <Card.ImgOverlay>
                           <Card.Title>{detail.name}, {detail.sys.country}</Card.Title>
                           <p>Time : {new Date(detail.dt).toLocaleTimeString()}</p>
-                          <p>{detail.main.temp}°C</p>
+                          <div className="w-description">
                           {<p>{detail.weather[0].description}</p>}
+                          </div>
+                          <div className="temp">
+                            <div className="main-temp">
+                          <p>{detail.main.temp}°C</p>
+                          </div>
+                          <div className="temp-var">
                           <p>Temp Min: {detail.main.temp_min}°C</p>
                           <p>Temp Max: {detail.main.temp_max}°C</p>
+                          </div>
+                          </div>
                         </Card.ImgOverlay>
                       </div>
                       <div className="c-body">

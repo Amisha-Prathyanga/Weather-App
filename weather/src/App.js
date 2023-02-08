@@ -1,26 +1,25 @@
-import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./components/header";
-import AddCity from './components/addCity';
-import Home from './Pages/Home';
+import AddCity from "./components/addCity";
+import Home from "./Pages/Home";
 import WeatherDetails from "./components/WeatherDetails";
 import dashBack from "./img/DashBack.jpg";
-import 'bootstrap/dist/css/bootstrap.min.css';
-
+import "bootstrap/dist/css/bootstrap.min.css";
+import Background from "./components/background";
 
 function App() {
   return (
-    
     <Router>
-      <div style={{backgroundImage: `url(${dashBack})`}}>
-      <Header/>
-      <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/addCity" element={<AddCity/>}/>
-        <Route path="/:id" element={<WeatherDetails/>}/>
-      </Routes>
+      {/* <Background /> */}
+      <div style={{ backgroundImage: `url(${dashBack})`, width: "100%" }}>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/addCity" element={<AddCity />} />
+          <Route path="/:id" element={<WeatherDetails />} />
+        </Routes>
       </div>
     </Router>
-    
   );
 }
 
