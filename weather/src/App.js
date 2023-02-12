@@ -6,19 +6,22 @@ import WeatherDetails from "./components/WeatherDetails";
 import dashBack from "./img/DashBack.jpg";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Background from "./components/background";
+import Footer from "./components/footer";
 
 function App() {
   return (
     <Router>
-      {/* <Background /> */}
-      <div style={{ backgroundImage: `url(${dashBack})`, width: "100%" }}>
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/addCity" element={<AddCity />} />
-          <Route path="/:id" element={<WeatherDetails />} />
-        </Routes>
+      <Background />
+      <div>
+      <Header />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/addCity" element={<AddCity />} />
+        <Route path="/:id" element={<WeatherDetails />} />
+      </Routes>
       </div>
+      {/*    */}
     </Router>
   );
 }

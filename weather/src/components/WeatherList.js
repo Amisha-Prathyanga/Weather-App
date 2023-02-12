@@ -11,6 +11,7 @@ import dashBack from "../img/DashBack.jpg";
 import cloud1 from "../img/cloud1.png";
 import cardBack from "../img/CloudBack.png";
 import "../css/WeatherList.css";
+
 const WeatherList = ({ details }) => {
   return (
     // <Container className="cards">
@@ -155,44 +156,49 @@ const WeatherList = ({ details }) => {
     // )
 
     //--------------------------------------------------------------------------------------------------------
-
-    <div className="card-main">
-      {details.list.map((detail) => (
-        <Link to={`/${detail.id}`}>
-          <div className="card card-each">
-            <img className="card-img-top card-img" src={cardBack} />
-            <div className="card-top-left">
-              <h2>
-                {detail.name}, {detail.sys.country}
-              </h2>
-              <p>Time : {new Date(detail.dt).toLocaleTimeString()}</p>
-              <h4>{detail.weather[0].description}</h4>
-            </div>
-            <div className="card-top-right">
-              <h1>{detail.main.temp}°C</h1>
-              <h5>Temp Min: {detail.main.temp_min}°C</h5>
-              <h5>Temp Max: {detail.main.temp_max}°C</h5>
-            </div>
-            <div className="card-body1">
-              <div className="card-body card-body-left">
-                <p>Pressure : {detail.main.pressure}Pa</p>
-                <p>Humudity : {detail.main.humidity}%</p>
-                <p>Visibility : {detail.visibility}km</p>
+    <>
+      <div className="card-main">
+        {details.list.map((detail) => (
+          <Link to={`/${detail.id}`}>
+            <div className="card card-each">
+              <img className="card-img-top card-img" src={cardBack} />
+              <div className="card-top-left">
+                <h2>
+                  {detail.name}, {detail.sys.country}
+                </h2>
+                <p>Time : {new Date(detail.dt).toLocaleTimeString()}</p>
+              <div className="card-bottom-left">
+                <h4>{detail.weather[0].description}</h4>
               </div>
-              <div className="card-body card-body-middle">
-                <p>
-                  {detail.wind.speed}m/s {detail.wind.deg} Degree
-                </p>
               </div>
-              <div className="card-body card-body-right">
-                <p>Sunrise: 6:05am</p>
-                <p>Sunset: 6:05am</p>
+              <div className="card-top-right">
+                <h1>{detail.main.temp}°c</h1>
+                <div className="card-bottom-right">
+                  <h5>Temp Min: {detail.main.temp_min}°C</h5>
+                  <h5>Temp Max: {detail.main.temp_max}°C</h5>
+                </div>
+              </div>
+              <div className="card-body1">
+                <div className="card-body card-body-left">
+                  <p>Pressure : {detail.main.pressure}Pa</p>
+                  <p>Humudity : {detail.main.humidity}%</p>
+                  <p>Visibility : {detail.visibility}km</p>
+                </div>
+                <div className="card-body card-body-middle">
+                  <p>
+                    {detail.wind.speed}m/s {detail.wind.deg} Degree
+                  </p>
+                </div>
+                <div className="card-body card-body-right">
+                  <p>Sunrise: 6:05am</p>
+                  <p>Sunset: 6:05am</p>
+                </div>
               </div>
             </div>
-          </div>
-        </Link>
-      ))}
-    </div>
+          </Link>
+        ))}
+      </div>
+    </>
   );
 };
 

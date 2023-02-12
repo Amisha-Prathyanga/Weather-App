@@ -1,8 +1,8 @@
-import dashBack from "../img/DashBack.jpg";
-const Background = () => {
-    return ( 
-        <div style={{backgroundImage: `url(${dashBack})`}}></div>
-     );
-}
- 
-export default Background;
+import React from "react";
+import Back from "../img/DashBack.jpg";
+
+export const background = () => {
+  return <img src={Back} />;
+};
+
+export default background;

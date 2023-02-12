@@ -197,8 +197,9 @@ code {
 
   .mb-3{
     position: relative;
-    top: 60px;
-    left: 530px;
+    bottom: 1600px;
+    margin-top: 3%;   
+    left: 450px;
     max-width: 500px;
   }
 
@@ -219,19 +220,25 @@ code {
   /*-------------------------------------------------header---------------------------------*/
 
   .header h1{
-    position: relative;
-    top: 50px;
-    color: #f4f0f0;
+    /* position: relative;
+    bottom: 1680px; */
+    position: absolute;
+    top: 2%;
+    left: 45%;
+    color: white;
     font-size: 25px;
+    margin-top: 2%;
     text-align: center;
     padding-left: 10px;
+    
     
   }
 
   .logo {
-    position: relative;
-    top: 10px;
-    left: 630px;
+    position: absolute;
+    /* bottom: 1728px; */
+    top: 5%;
+    left: 42%;
     width: 45px;
   }
 
@@ -239,17 +246,12 @@ code {
   /* ----------------------------------------------One Card--------------------------------------------- */
   
   .one-card{
+    top: -1600px;
     position: relative;
-    top: -350px;
-    margin-top: 30%;
     margin-left: 20%;
-
-  margin-right: 20%;
-
-  width: 900px;
-  border: none;
-
-    
+    margin-right: 20%;
+    width: 900px;
+    border: none;
     text-align: center;
     color: white;
   }
@@ -338,10 +340,11 @@ code {
 
   .card-main{
     position:absolute;
-    top: 30%; 
+    top: 20%; 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
+    margin-top: 5%;
     margin-left: 15%;
     margin-right: 15%;
     
@@ -353,6 +356,7 @@ code {
     background-color: #383b47 ;
     color: rgb(254, 254, 254);
     border-radius: 20px;
+    font-size: 12px;
     
 }
 
@@ -367,14 +371,21 @@ code {
     position: absolute;
     padding: 30px;
     text-align: center;
+    text-decoration: none;
 }
 
 .card-top-left h2{
-    font-size: 40px;
+  margin-top: 10px;
+    font-size: 25px;
 }
 
+/* .card-top-left h4{
+  font-size: 12px;
+} */
+
 .card-top-left p{
-    font-size: 20px;
+    font-size: 12px;
+   margin-bottom: 25px;
 }
 
 .card-top-right{
@@ -382,17 +393,31 @@ code {
     padding: 30px;
     margin-left: 55%;
     text-align: center;
+    
 }
 
 .card-top-right h1{
     font-size: 50px;
 }
 
+.card-bottom-right h5{
+  font-size: 12px;
+  position: relative;
+  top: 10px;
+  right: 30px;
+}
+
+
+
 .card-body-middle{
     position: absolute;
-    top: 60%;
+    top: 70%;
     left: 38%;
     font-weight: bold;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-width: 2px;
+    border-color: white;
 }
 
 .card-body-right{
@@ -412,6 +437,15 @@ code {
   background-color: #383b47 ;
   
 }
+
+@media screen and (max-width : 1000px){
+  .card-main{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
+}
+
+
 
  
 
