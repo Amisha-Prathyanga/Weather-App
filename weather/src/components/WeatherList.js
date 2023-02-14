@@ -14,14 +14,16 @@ import "../css/WeatherList.css";
 
 const WeatherList = ({ details }) => {
   const weatherColorMap = {
-    Clear: "#FBD49D",
-    Clouds: "#D4D4D4",
+    "clear sky": "#00ff80",
+    "broken clouds": "#7300e6",
     Rain: "#70A8FF",
     Drizzle: "#70A8FF",
     Thunderstorm: "#0E0E0E",
     Snow: "#E9F0F3",
-    Mist: "#7D7D7D",
-    Smoke: "#7D7D7D",
+    mist: "#ff3333",
+    "scattered clouds": "#ffa64d",
+    "few clouds": "#ffb3ff",
+    "overcast clouds": "#85e0e0",
     Haze: "#7D7D7D",
     Dust: "#7D7D7D",
     Fog: "#7D7D7D",
@@ -177,10 +179,12 @@ const WeatherList = ({ details }) => {
     <>
       <div className="card-main">
         {details.list.map((detail) => {
+           const bgColor = weatherColorMap[detail.weather[0].description] || '#388ee7';
+           const cardStyle = { backgroundColor: bgColor };
           return(
           <Link to={`/${detail.id}`}>
             <div className="card card-each">
-              <img className="card-img-top card-img" src={cardBack} />
+              <img className="card-img-top card-img" src={cardBack} style={cardStyle} />
               <div className="card-top-left">
                 <h2>
                   {detail.name}, {detail.sys.country}
