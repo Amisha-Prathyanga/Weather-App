@@ -16,7 +16,8 @@ const Home = () => {
     isPending,
     error,
   } = useFetch(
-    `http://api.openweathermap.org/data/2.5/group?id=${cityIDArr}&units=metric&appid=${process.env.REACT_APP_API_TOKEN}`
+    `http://api.openweathermap.org/data/2.5/group?id=${cityIDArr}&units=metric&appid=${process.env.REACT_APP_API_TOKEN}`,
+    1850147
   );
   return (
     <>

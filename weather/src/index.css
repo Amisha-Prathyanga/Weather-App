@@ -196,7 +196,8 @@ code {
   /*-------------------------------------------------Background------------------------------*/
 
   .background{
-    background-size: auto 80%;
+    height: 236vh;
+    width: 98.9vw;
   }
 
   /*-------------------------------------------------Input box------------------------------*/
@@ -470,6 +471,16 @@ code {
   .card-main{
     grid-template-columns: repeat(1, 1fr);
   }
+
+  .mb-3{
+    position: absolute;
+    bottom: 1600px;
+    margin-top: 3%;   
+    left: 250px;
+    /* max-width: 500px; */
+  }
+
+
   
 }
 
