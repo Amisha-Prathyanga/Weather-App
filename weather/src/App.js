@@ -21,6 +21,8 @@ function App() {
         <Route path="/:id" element={<WeatherDetails />} />
       </Routes>
       </div>
+
+      <Footer/>
       {/*    */}
     </Router>
   );
