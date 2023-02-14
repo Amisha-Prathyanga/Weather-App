@@ -367,6 +367,27 @@ code {
     border-top-right-radius: 15px;
 }
 
+.card-img-sunny {
+  background-color: #ffdb58; /* Yellow */
+}
+
+.card-img-cloudy {
+  background-color: #d3d3d3; /* Light grey */
+}
+
+.card-img-rainy {
+  background-color: #4682b4; /* Steel blue */
+}
+
+.card-img-snowy {
+  background-color: #f0f8ff; /* Alice blue */
+}
+
+.card-img-stormy {
+  background-color: #778899; /* Light slate grey */
+}
+
+
 .card-top-left{
     position: absolute;
     padding: 30px;

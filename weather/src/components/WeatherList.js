@@ -13,6 +13,24 @@ import cardBack from "../img/CloudBack.png";
 import "../css/WeatherList.css";
 
 const WeatherList = ({ details }) => {
+  const weatherColorMap = {
+    Clear: "#FBD49D",
+    Clouds: "#D4D4D4",
+    Rain: "#70A8FF",
+    Drizzle: "#70A8FF",
+    Thunderstorm: "#0E0E0E",
+    Snow: "#E9F0F3",
+    Mist: "#7D7D7D",
+    Smoke: "#7D7D7D",
+    Haze: "#7D7D7D",
+    Dust: "#7D7D7D",
+    Fog: "#7D7D7D",
+    Sand: "#7D7D7D",
+    Ash: "#7D7D7D",
+    Squall: "#0E0E0E",
+    Tornado: "#0E0E0E",
+  };
+
   return (
     // <Container className="cards">
     //   <Row>
@@ -158,7 +176,8 @@ const WeatherList = ({ details }) => {
     //--------------------------------------------------------------------------------------------------------
     <>
       <div className="card-main">
-        {details.list.map((detail) => (
+        {details.list.map((detail) => {
+          return(
           <Link to={`/${detail.id}`}>
             <div className="card card-each">
               <img className="card-img-top card-img" src={cardBack} />
@@ -167,9 +186,9 @@ const WeatherList = ({ details }) => {
                   {detail.name}, {detail.sys.country}
                 </h2>
                 <p>Time : {new Date(detail.dt).toLocaleTimeString()}</p>
-              <div className="card-bottom-left">
-                <h4>{detail.weather[0].description}</h4>
-              </div>
+                <div className="card-bottom-left">
+                  <h4>{detail.weather[0].description}</h4>
+                </div>
               </div>
               <div className="card-top-right">
                 <h1>{detail.main.temp}°c</h1>
@@ -196,7 +215,8 @@ const WeatherList = ({ details }) => {
               </div>
             </div>
           </Link>
-        ))}
+          )
+        })}
       </div>
     </>
   );
