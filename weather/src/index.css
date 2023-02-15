@@ -12,187 +12,6 @@ code {
     monospace;
 }
 
-/* .detail-preview a{
-  text-decoration: none;
-}
-
-.weather-card a{
-  text-decoration: none;
-  
-} */
-
-/* .card {
- 
-  display: grid;
-   
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-   
-  grid-auto-rows: auto;
-   
-  grid-gap: 200px;
-   
-  } */
-
-  /* .card {
- 
-    position: relative;
-    top: 90px;
-    min-height: 100%;
-
-    display: flex;
-     
-    flex-wrap: wrap;
-
-    flex-direction: row;
-     
-    }
-   
-
-   
-  .card {
-   
-  border: 2px solid #f4f0f0;
-   
-  border-radius: 4px;
-   
-  padding: .5em;
-   
-  } */
-
-  /* .card {
-    border: 0;
-  }
-  
-  .card-img-top {
-    border: none;
-  }
-
-  .cards {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .weather-card {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1rem;
-  }
-
-  .card-spacing {
-    margin-left: 1rem;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
-  }
-
-  
-  
-
-  .mb-3{
-    position: relative;
-    top: 100px;
-    left: 530px;
-    max-width: 500px;
-  }
-
-  .input-box {
-    background-color: #333333 !important;
-    border-color: #333333 !important;
-  }
-
-  .card-body {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-    padding: 0.75rem 1rem;
-    font-size: 0.6rem;
-    background-color: #333333;
-    color: white !important;
-    border: none;
-  }
-
-
-
-   .card-body-text {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    
-    
-  } 
-  
-
-   .card-body div {
-    flex-basis: calc(33.33% - 0.5rem);
-    border-right: 1px solid #ddd;
-    padding: 0.5rem 1rem;
-  }
-  
-  .card-body div:last-child {
-    border-right: none;
-  }
-
-  .card-body span {
-    display: inline-block;
-    width: calc(100% / 3);
-    text-align: center;
-    padding: 1rem 0;
-    border-right: 1px solid white;
-  }
-  .card-body span:last-child {
-    border-right: 0;
-  }
-
-  .card-body p {
-    text-align: left;
-    white-space: nowrap;
- } 
-  
-
-  .mb-3 ::placeholder{
-    color: #f4f0f0 !important;
-  }
-
-  .btn-addCity{
-    background-color:  #9a50e5 !important;
-    color: #f4f0f0 !important;
-  }
-  .header{
-    position:relative;
-    right: 650px;
-    
-  }
-
-  .header h1{
-    position: relative;
-    top: 30px;
-    float:right;
-    color: #f4f0f0;
-    font-size: 25px;
-    text-align: center;
-    padding-left: 10px;
-    
-  }
-
-  .logo {
-    position: relative;
-    top: 25px;
-    float: right;
-    width: 45px;
-  }
-
-  .card-Main{
-    position: relative;
-    top: 100px;
-  } */
-
-  /* .header{
-    position:relative;
-    right:-350px;
-    
-  } */
-
   /*-------------------------------------------------Background------------------------------*/
 
   .background{
@@ -206,8 +25,8 @@ code {
     position: relative;
     bottom: 1600px;
     margin-top: 3%;   
-    left: 450px;
-    max-width: 500px;
+    left: 32%;
+    max-width: 35%;
   }
 
   .input-box {
@@ -265,6 +84,8 @@ code {
     text-align: center;
     color: white;
   }
+
+
 
   .c-body{
     background-color: #333333;
@@ -404,7 +225,7 @@ code {
 .card-top-right{
     position: absolute;
     padding: 30px;
-    margin-left: 55%;
+    margin-left: 52%;
     text-align: center;
     
 }
@@ -425,7 +246,7 @@ code {
 .card-body-middle{
     position: absolute;
     top: 70%;
-    left: 38%;
+    left: 39%;
     font-weight: bold;
     border-right-style: solid;
     border-left-style: solid;
@@ -436,13 +257,13 @@ code {
 .card-body-right{
    position: absolute;
    top: 60%;
-   left: 72%;
+   left: 74%;
    font-weight: bold;
 }
 
 .card-body-left{
     top: 62%;
-    margin-left: 8%;
+    margin-left: 6%;
     font-weight: bold;
 }
 
@@ -467,23 +288,147 @@ code {
   padding-bottom: 3%;
 }
 
+
+/* ------------------------------------media queries------------------------------------- */
+
+
+@media screen and (max-width : 1285px) {
+  .card-top-left{
+    padding: 20px;
+   
+}
+
+.card-top-right{
+  padding: 30px;
+  margin-left: 50%;
+  
+  
+}
+
+.card-body-right{
+  left: 75%;
+  
+}
+
+.card-body-left{
+   margin-left: 4%;
+   
+}
+
+
+
+  
+}
+
+@media screen and (max-width : 1180px){
+
+  .card-top-right{
+    
+    padding: 25px;
+    margin-left: 50%;
+    
+    
+  }
+
+  .card-body-right{
+    
+    
+    left: 80%;
+    
+  }
+  
+  .card-body-left{
+     
+     margin-left: -2%;
+     
+  }
+
+  .card-top-right h1{
+    font-size: 40px;
+}
+
+
+/* -------------------------one card---------------------------------------------- */
+
+.one-card{
+  margin-left: 8%;
+ 
+}
+}
+
 @media screen and (max-width : 1000px){
   .card-main{
     grid-template-columns: repeat(1, 1fr);
   }
 
   .mb-3{
-    position: absolute;
-    bottom: 1600px;
+    position: relative;
+    bottom: 3150px;
     margin-top: 3%;   
-    left: 250px;
-    /* max-width: 500px; */
+    left: 24%;
+    max-width: 45%;
   }
+
+  .background{
+    height: 448vh;
+    width: 98.3vw;
+  }
+
+  .card-top-right{
+    
+    padding: 20px;
+    margin-left: 65%;
+    
+    
+  }
+
+  .card-top-left{
+  
+    padding: 20px;
+    margin-left: 10%;
+    
+}
+
+.card-body-right{
+  
+  
+  left: 75%;
+  
+}
+
+.card-body-left{
+   
+   margin-left: 5%;
+   
+}
+
+.one-card{
+  margin-left: 5%;
+  width: 100%;
+ 
+}
+
+.overlay-img{
+  width: 30%;
+}
+
+ 
 
 
   
 }
 
+
+@media screen and (max-width : 585px){
+
+  .card-top-right{
+    padding: 20px;
+    margin-left: 50%;
+    
+    
+  }
+
+}
 
 
  
