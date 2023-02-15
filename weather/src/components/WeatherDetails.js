@@ -1,4 +1,3 @@
-import "../css/WeatherDetails.css";
 import { useParams } from "react-router-dom";
 import useFetch from "./useFetch";
 import Card from "react-bootstrap/Card";

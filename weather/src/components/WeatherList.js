@@ -1,7 +1,7 @@
 import "holderjs";
 import { Link } from "react-router-dom";
 import cardBack from "../img/CloudBack.png";
-import "../css/WeatherList.css";
+
 
 const WeatherList = ({ details }) => {
   const weatherColorMap = {
