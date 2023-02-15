@@ -3,7 +3,6 @@ import Header from "./components/header";
 import AddCity from "./components/addCity";
 import Home from "./Pages/Home";
 import WeatherDetails from "./components/WeatherDetails";
-import dashBack from "./img/DashBack.jpg";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Background from "./components/background";
 import Footer from "./components/footer";

@@ -2,9 +2,7 @@ import "../css/WeatherDetails.css";
 import { useParams } from "react-router-dom";
 import useFetch from "./useFetch";
 import Card from "react-bootstrap/Card";
-import dashBack from "../img/DashBack.jpg";
 import lightBlue from "../img/lightBlue.jpg";
-import Container from "react-bootstrap/Container";
 const WeatherDetails = () => {
   const { id } = useParams();
   const {
